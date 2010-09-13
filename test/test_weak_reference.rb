@@ -1,15 +1,4 @@
-module ActionView
-  module Partials
-   def render_partial
-    #so that we do not have to load action view but can still alias this method
-   end
-  end
-end
-
-
-require 'rubygems'
-require 'lib/rails_dm_datastore'
-require 'test/unit'
+require 'helper'
 
 class TestInlineCall
   extend Extlib::Hook::ClassMethods

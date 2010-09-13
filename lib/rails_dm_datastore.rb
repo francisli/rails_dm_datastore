@@ -9,7 +9,3 @@ require 'rails_dm_datastore/data_mapper'
 require 'rails_dm_datastore/local_object_space'
 require 'rails_dm_datastore/extlib'
 require 'rails_dm_datastore/action_view'
-
-# DataMapper::Validate
-class Dictionary; alias count length; end
-
