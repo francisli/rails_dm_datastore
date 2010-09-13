@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'rake'
 
-DM_VERSION = "0.10.2"
+DM_VERSION = "1.0.2"
 
 begin
   require 'jeweler'
@@ -12,7 +12,6 @@ begin
     gem.email = ["joshsmoore@gmail.com", "woodie@netpress.com"]
     gem.homepage = "http://github.com/joshsmoore/rails_dm_datastore"
     gem.authors = ["Josh S Moore", "John Woodell"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     gem.add_dependency 'dm-core', DM_VERSION
     gem.add_dependency 'dm-ar-finders', DM_VERSION
