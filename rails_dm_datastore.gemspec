@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.authors = ["Josh S Moore", "John Woodell"]
-  s.date = %q{2010-09-13}
+  s.date = %q{2010-09-21}
   s.description = %q{Integrate datamapper to Rails for the Google App Engine}
   s.email = ["joshsmoore@gmail.com", "woodie@netpress.com"]
   s.extra_rdoc_files = [
