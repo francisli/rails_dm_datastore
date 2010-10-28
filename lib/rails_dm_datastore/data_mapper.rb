@@ -14,9 +14,10 @@ module DataMapper
     def attributes=(attributes)
       return if attributes.nil?
       self.class.properties.each do |t|
-        if !(t.name.to_s =~ /.*_at/) && (t.type.to_s =~ /Date|Time/ ) &&
+        if !(t.name.to_s =~ /.*_at/) && (t.primitive.to_s =~ /Date|Time/ ) &&
             attributes.include?("#{t.name.to_s}(1i)")
-          MultiparameterAssignments.fix_date(attributes, t.name.to_s, t.type)
+          puts 'here fixing attribute'
+          MultiparameterAssignments.fix_date(attributes, t.name.to_s, t.primitive)
         end
       end
       self.attributes_orig=(attributes)
