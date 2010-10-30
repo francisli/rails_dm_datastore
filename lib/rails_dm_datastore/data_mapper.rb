@@ -5,7 +5,7 @@ module DataMapper
     alias :attributes_orig= :attributes=
     
     # avoid object references in URLs
-    #def to_param; id.id.to_s; end
+    def to_param; id.to_s; end
     
     # silence deprecation warnings
     def new_record?; new?; end
