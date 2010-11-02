@@ -7,8 +7,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "rails_dm_datastore"
-    gem.summary = %Q{Generators for dm on App Engine}
-    gem.description = %Q{Integrate datamapper to Rails for the Google App Engine}
+    gem.summary = %Q{Integrate datamapper to Rails for the Google App Engine}
+    gem.description = %Q{This gem patches all of the problems that appear from running Rails with DataMapper on the GAE.  The main patches are patching DataMapper so that it does not use the ObjectSpace (The ObjectSpace itself is also patched so that this works seamlessly).  Also ActiveView is patched so that all of the partial shortcuts work with DataMapper.  In addition, a generate is provided (dd_model) that will produce a DataMapper model.  One last note is that this gem depends on a dm-core (and other dm gems), dm-appengein, and rails_appengene so all you need is to require this gem in your gem file and you should get all the other gems you need to make DataMapper work with Rails and the GAE.}
     gem.email = ["joshsmoore@gmail.com", "woodie@netpress.com"]
     gem.homepage = "http://github.com/joshsmoore/rails_dm_datastore"
     gem.authors = ["Josh S Moore", "John Woodell"]

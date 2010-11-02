@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rails_dm_datastore}
-  s.version = "0.2.11.pre"
+  s.version = "0.2.16"
 
-  s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Josh S Moore", "John Woodell"]
-  s.date = %q{2010-09-13}
-  s.description = %q{Integrate datamapper to Rails for the Google App Engine}
+  s.date = %q{2010-10-30}
+  s.description = %q{This gem patches all of the problems that appear from running Rails with DataMapper on the GAE.  The main patches are patching DataMapper so that it does not use the ObjectSpace (The ObjectSpace itself is also patched so that this works seamlessly).  Also ActiveView is patched so that all of the partial shortcuts work with DataMapper.  In addition, a generate is provided (dd_model) that will produce a DataMapper model.  One last note is that this gem depends on a dm-core (and other dm gems), dm-appengein, and rails_appengene so all you need is to require this gem in your gem file and you should get all the other gems you need to make DataMapper work with Rails and the GAE.}
   s.email = ["joshsmoore@gmail.com", "woodie@netpress.com"]
   s.extra_rdoc_files = [
     "LICENSE",
@@ -41,7 +41,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Generators for dm on App Engine}
+  s.summary = %q{Integrate datamapper to Rails for the Google App Engine}
   s.test_files = [
     "test/helper.rb",
      "test/test_dm-rails-gae.rb",
