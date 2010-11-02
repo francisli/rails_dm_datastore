@@ -1,11 +1,15 @@
 # Patch connections between DataMapper and Rails 2.3.5
 module DataMapper
   module Resource
-    
+
     alias :attributes_orig= :attributes=
-    
+
     # avoid object references in URLs
-    def to_param; id.id.to_s; end
+    def to_param
+      id.nil?? "" :
+        id.is_a?(Integer)? id.to_s : id.id.to_s
+    end
+
     # silence deprecation warnings
     def new_record?; new?; end
     # avoid NoMethodError
