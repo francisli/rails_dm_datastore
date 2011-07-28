@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'rake'
 
-DM_VERSION = "1.0.2"
+DM_VERSION = "1.1.0"
 
 begin
   require 'jeweler'
@@ -17,6 +17,7 @@ begin
     gem.add_dependency 'dm-ar-finders', DM_VERSION
     gem.add_dependency 'dm-timestamps', DM_VERSION
     gem.add_dependency 'dm-validations', DM_VERSION
+    gem.add_dependency 'extlib'
     gem.add_dependency 'dm-appengine'
     gem.add_dependency 'rails_appengine'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings

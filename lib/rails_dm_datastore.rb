@@ -1,8 +1,9 @@
-# patch for -- dm-core 0.10.2 & rails 2.3.5
+# patch for -- dm-core 1.1.0 & rails 2.3.x
 require 'dm-core'
 require 'dm-ar-finders'
 require 'dm-timestamps'
 require 'dm-validations'
+require 'extlib'
 DataMapper.setup(:default, "appengine://auto")
 
 require 'rails_dm_datastore/data_mapper'
